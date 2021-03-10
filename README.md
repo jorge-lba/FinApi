@@ -3,6 +3,7 @@
 Api desenvolvida durante as aulas do primeiro capitulo do curso Ignite NodeJS.
 
 Durante o desenvolvimento colocamos em pratica conceitos básicos de **HTTP**, **Middleware** e **Express**.
+
 ---
 
 ### Como rodar o Projeto
