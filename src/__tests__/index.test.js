@@ -103,8 +103,6 @@ describe('Get /statement/date', () => {
             .query({date: dateFormate})
             .set('cpf', accountDefault.cpf)
 
-        console.log(dateFormate)
-
         expect(response.status).toBe(200)
         expect(response.body[0].description).toBe('Test deposit')
     })
