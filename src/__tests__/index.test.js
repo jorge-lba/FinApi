@@ -186,3 +186,14 @@ describe('Delete /account', () => {
         expect(response.body.error).toBe('Customer not found')
     })
 })
+
+describe('Get /balance', () => {
+    it('Return balance amount', async () => {
+        const response = await request(app)
+        .get('/balance')
+        .set('cpf', accountDefault.cpf)
+    
+        expect(response.status).toBe(200)
+        expect(typeof response.body).toBe('number')
+    })
+})

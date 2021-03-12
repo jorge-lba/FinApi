@@ -21,6 +21,17 @@ Durante o desenvolvimento colocamos em pratica conceitos básicos de **HTTP**, *
     $ yarn start
 ```
 
+### Testes
+Originalmente o desenvolvimento feito nesse módulo não possuia testes, então implementei os testes com cobertura de 100% das respostas desenvolvidas.
+
+```bash
+    # Rodar Testes
+    $ yarn test
+
+    # Rodar Testes com Tabela de cobertura
+    $ yarn jest --collect-coverage
+```
+
 ### Requisitos
 
 - [x] Deve ser possível criar uma conta
