@@ -1,5 +1,5 @@
-const express = require('express')
 const { v4: uuid } = require('uuid')
+const express = require('express')
 
 const app = express()
 
@@ -22,7 +22,7 @@ function verifyExistsAccountCPF(request, response, next) {
 
 function getBalance(statement){
     const balance = statement.reduce((acc, operation) => {
-        return operation.type === 'credit'
+         operation.type === 'credit'
             ? acc + operation.amount
             : acc - operation.amount
     }, 0)
@@ -142,4 +142,4 @@ app.get('/balance', verifyExistsAccountCPF, (request, response) => {
     return response.json(balance)
 })
 
-app.listen(3333, () => console.log('Server on!'))
+module.exports = app
